@@ -7,21 +7,22 @@ body{
 
 .main_page{
     background-color: white;
-     max-width: 300%;
-     margin: 2rem  24rem;
-    padding: 3rem 8rem;
+     width: 50%;
+     margin: 2rem  2rem;
+    padding: 3rem 4rem;
     align-items: center;
     border-radius: 0.6rem;
 }
 
 
 .page_header{
-    padding: 0rem 0.3rem;
-    background-color: white;
-  max-width: 100%;
+padding: 0rem 0.3rem;
+background-color: white;
+  width: 50%;
+margin: 2rem auto;
   max-height: 40%;
   text-align: center;
- border: 5px solid black;
+ border: 2px solid black;
  border-radius: 1rem;
  font-weight: 700; 
  margin-bottom: 2rem;
@@ -57,4 +58,6 @@ body{
   max-height: 100%;
  
  }
-
+.main_activity{
+    display: flex;
+}

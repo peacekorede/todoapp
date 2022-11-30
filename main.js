@@ -11,10 +11,25 @@ let todo = []
 btn_2.addEventListener('click', () => {
     console.log(input.value)
     todo.push(input.value)
-    let nextItem  = document.createElement('p')
-    display.appendChild(nextItem)
+      let span1 = document.createElement('span')
+      let span2 = document.createElement('span')
+    let contentwrap  = document.createElement('div')
+    
+  contentwrap.insertAdjacentHTML(
+    `afterbegin`,
+    `<span > ${input.value}</span>`
+  )
+  contentwrap.insertAdjacentHTML(
+    'beforeend',
+    '<span style="margin:10px; border: 1px solid red; cursor:pointer; ">+</span>'
+  )
+  contentwrap.style.margin = "10px 10px"
+  contentwrap.style.textDecoration = 'underline'
+  input.value = ''
+    display.appendChild(contentwrap)
    nextItem.style.border = "1px solid green"
  display.innerHTML += input.value + '<br />'
+
 input.value = ''
 console.log(todo)
 display.style.border = "3px solid black"
