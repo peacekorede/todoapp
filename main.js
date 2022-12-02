@@ -14,14 +14,25 @@ btn_2.addEventListener('click', () => {
       let span1 = document.createElement('span')
       let span2 = document.createElement('span')
     let contentwrap  = document.createElement('div')
-    
+
+    /*
+    let deleteButton = document.createElement('div');
+    deleteButton.className.add('delete')
+    deleteButton.innerHTML = display
+
+   deleteButton.addEventListener('click',() => {
+         display.removeChild(contentwrap)
+   })
+    */
+
+
   contentwrap.insertAdjacentHTML(
     `afterbegin`,
     `<span > ${input.value}</span>`
   )
   contentwrap.insertAdjacentHTML(
     'beforeend',
-    '<span style="margin:10px; border: 2px solid red; cursor: pointer; padding: 0.5rem; padding-buttom:-1rem; border-radius: 0.6rem; align-self: center; "><img src="/images/download (2).png" alt=""  width="22px"></span>'
+    '<span style="margin:10px; border: 2px solid red; cursor: pointer; padding: 0.5rem; padding-buttom:-1rem; border-radius: 0.6rem; align-self: center; "><img src="/images/download (2).png" alt="" width="22px" ></span>'
   )
   contentwrap.style.margin = "18px 10px"
   contentwrap.style.paddingLeft = "6rem"
